@@ -2,13 +2,7 @@
 import React, { useState } from 'react'
 
 const artists = [
-    {
-        name: "Murali Nagapuzha",
-        img: "https://images.unsplash.com/photo-1688589012487-7be6b0741d77?q=80&w=1095&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        city: "Chennai",
-        specialty: "Nature-centric naïve art",
-        achievements: "Pollock-Krasner Grant",
-    },
+
     {
         name: "Nilisha Phad",
         img: "https://images.unsplash.com/photo-1688589012487-7be6b0741d77?q=80&w=1095&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -140,6 +134,12 @@ export default function ArtistNamesSection() {
                 </div>
                 {/* Artist Grid */}
                 <div className="mt-14 grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
+
+                    <div className="w-full  center group relative ">
+                        <img className='' src="/images/canvas_and_creation/img2.jpeg" alt="" />
+                        <img className='absolute opacity-0 group-hover:opacity-100 transition-all duration-300' src="/images/canvas_and_creation/img1.jpeg" alt="" />
+                    </div>
+
                     {artists.map((artist, index) => {
                         const isActive = activeIndex === index;
 
