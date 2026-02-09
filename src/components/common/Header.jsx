@@ -70,8 +70,6 @@ const Header = () => {
           <a
             onClick={closeMenu}
             href="#contact"
-            target="_blank"
-            rel="noopener noreferrer"
             className="relative   overflow-hidden flex flex-col items-center"
           >
             <h2 className=" anii text-2xl uppercase">Join the community</h2>
@@ -100,8 +98,8 @@ const Header = () => {
             </a>
           ))}
         </div>
-        <div className="w-[50%]   h-full flex justify-center ">
-          <a href="/" className='w-[50%] md:w-[25%]'>
+        <div className="w-[50%]  flex lg:justify-center ">
+          <a href="/" className='w-[50%] md:w-[35%] lg:w-[25%]'>
             <img className=' w-full  lg:opacity-100 translate-y-[1vw]' src="/logo/SDAF black.png" alt="logo_black" />
           </a>
         </div>

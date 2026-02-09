@@ -31,17 +31,20 @@ export default function CanvasCreationUnique() {
     })
 
     return (
-        <div className="  canvas_creation_sec relative w-full overflow-hidden  flex flex-col md:flex-row items-stretch  gap-x-44  px-[4vw] ">
+        <div className=" max-lg:mt-14 canvas_creation_sec relative w-full overflow-hidden  flex flex-col md:flex-row items-stretch  md:gap-x-10 lg:gap-x-44  px-[4vw] ">
 
             {/* Canvas Text Block */}
             <div className=" w-full md:w-1/2  flex justify-center flex-col relative">
                 <h2 className='  uppercase text-[#EB8529] text-sm font-semibold lg:text-xl'>Enduring Legacies | Edition 2</h2>
 
                 {/* Huge Title */}
-                <h2 className=" text-3xl  lg:text-[4.5vw] leading-none">
+                <h2 className=" max-sm:hidden text-3xl  lg:text-[4.5vw] leading-none">
                     Canvas <br /> & Creation
                 </h2>
-                <p className="mb-6 text-sm lg:text-lg   uppercase  ">
+                <h2 className=" md:hidden text-3xl mb-2 mt-5  lg:text-[4.5vw] leading-none">
+                    Canvas & Creation
+                </h2>
+                <p className="mb-6 text-xs lg:text-lg   uppercase  ">
                     An SDAF Art Camp
                 </p>
                 <div className=" md:mt-8 ">
@@ -75,34 +78,34 @@ export default function CanvasCreationUnique() {
             </div>
 
             {/* Vertical Image Strip */}
-            <div className=" w-full md:w-1/2  grid gap-5 grid-cols-2">
+            <div className=" max-sm:mt-8 w-full md:w-1/2  grid gap-5 grid-cols-2">
 
-                <div className=" grid_img_paren_1 relative  aspect-6/7 w-[80%]">
+                <div className=" grid_img_paren_1 relative  aspect-6/7 w-[100%] md:w-[80%]">
                     <img
-                        src="https://plus.unsplash.com/premium_photo-1667238537543-f724580b800e?q=80&w=724&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="/images/home_canvas_creation/img1.webp"
                         alt="Artist working"
                         className="cover grid_img_paren_1_inner"
                     />
                 </div>
                 <div className="relative grid_img_paren_1 mt-20 w-[100%] aspect-6/7">
                     <img
-                        src="https://images.unsplash.com/photo-1701958213864-2307a737e853?q=80&w=767&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="/images/home_canvas_creation/img2.webp"
                         alt="Canvas texture"
                         className="cover"
                     />
                 </div>
                 <div className="relative grid_img_paren_1 -mt-20  w-full aspect-6/7">
                     <img
-                        src="https://images.unsplash.com/photo-1763494893402-1629cdd8f07e?q=80&w=1956&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        src="/images/home_canvas_creation/img3.webp"
                         alt="Studio detail"
                         className="cover scale-x-[-1]"
                     />
                 </div>
                 <div className="w-full flex justify-end items-end aspect-6/7">
-                    <div className="relative grid_img_paren_1 w-[80%] aspect-6/7 ">
+                    <div className="relative grid_img_paren_1 w-[100%] md:w-[80%] aspect-6/7 ">
                         <img
                             alt="Abstract artwork"
-                            src="https://images.unsplash.com/photo-1584285405368-5cec784a5025?q=80&w=961&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="/images/home_canvas_creation/img4.webp"
                             className="cover"
                         />
                     </div>

@@ -200,9 +200,9 @@ const ContactForm = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" w-full lg:w-1/2 px-[4vw] flex lg:items-end  ">
+                <div className=" pt-6 lg:pt-0 w-full lg:w-1/2 px-[4vw] flex lg:items-end  ">
                     <div className=" w-full flex lg:flex-col items-end justify-between">
-                        <div className=" w-[45%] lg:w-full lg:flex  lg:items-end lg:justify-end">
+                        <div className=" w-[45%] md:w-[25%] lg:w-full lg:flex  lg:items-end lg:justify-end">
                             <a href="#hero" className=' w-full lg:w-[40%]'>
                                 <img className=' w-full ' src="/logo/SDAF black.png" alt="logo_black" />
                             </a>
