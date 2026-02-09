@@ -8,56 +8,61 @@ import CanvasCreationHomeSection from "@/components/Home/CanvasCreationHomeSecti
 import TimelessFramesHomeSection from "@/components/Home/TimelessFramesHomeSection";
 
 export const metadata = {
-  title:
-    "Timeless Frames: Indian Cinema Photo Exhibition | Mumbai · Sep 20–26",
+  title: "SDAF | Shivdutt Das Art Foundation — Art Belongs to Everyone",
   description:
-    "Rare 1950s–1980s cinema stills from the Kamat Foto Studio Archive. Piramal NCPA Gallery, Mumbai. Opening Night Sep 20. Public viewing Sep 21–26. RSVP.",
+    "The Shivdutt Das Art Foundation supports artists, preserves India's cultural heritage, and brings historic and contemporary art into public view through exhibitions and artist initiatives.",
+
   keywords: [
-    "art exhibition Mumbai",
-    "photography exhibition Mumbai",
-    "Indian cinema photography",
-    "Kamat Foto Studio",
-    "Damodar Kamat",
-    "Timeless Frames exhibition",
+    "Shivdutt Das Art Foundation",
+    "SDAF India",
+    "Indian art foundation",
+    "art foundation India",
+    "contemporary Indian artists",
+    "Indian art exhibitions",
+    "artist support programs India",
+    "cultural heritage preservation India",
     "Enduring Legacies SDAF",
-    "NCPA Gallery Mumbai",
-    "cinema stills 1950s–1980s",
+    "Canvas and Creation art camp",
   ],
+
   robots: "index, follow",
+
   openGraph: {
-    title:
-      "Timeless Frames: Indian Cinema Photo Exhibition | Mumbai · Sep 20–26",
+    title: "SDAF | Supporting Artists & Preserving Indian Cultural Heritage",
     description:
-      "Rare 1950s–1980s cinema stills from the Kamat Foto Studio Archive.",
+      "SDAF supports living artists and preserves India's cultural legacy through exhibitions, artist programs, and public initiatives.",
+    url: "https://sdaf.in",
+    siteName: "SDAF",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title:
-      "Timeless Frames: Indian Cinema Photo Exhibition | Mumbai · Sep 20–26",
+    title: "SDAF | Supporting Artists & Preserving Indian Cultural Heritage",
     description:
-      "Rare 1950s–1980s cinema stills from the Kamat Foto Studio Archive.",
+      "Supporting artists. Preserving heritage. Making art accessible to everyone.",
   },
-};
+}
 
 export default function HomePage() {
   return (
     <>
       <WebPageSchema
-        name="Timeless Frames: Indian Cinema Photo Exhibition"
-        description="Rare 1950s–1980s cinema stills from the Kamat Foto Studio Archive."
+        name="Shivdutt Das Art Foundation (SDAF)"
+        description="The Shivdutt Das Art Foundation supports artists, preserves India's cultural heritage, and promotes contemporary Indian art."
         url={`${Const.ClientLink}/`}
       />
 
+
       {/* <IntroLoader /> */}
 
-      <Hero/>
+      <Hero />
 
       <AboutFoundation />
 
-      <CanvasCreationHomeSection/>
+      <CanvasCreationHomeSection />
 
-      <TimelessFramesHomeSection/>
+      <TimelessFramesHomeSection />
 
 
     </>
