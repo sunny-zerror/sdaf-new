@@ -4,7 +4,7 @@ import { Link } from 'next-view-transitions'
 
 const TimelessFramesHomeSection = () => {
     return (
-        <div className='w-full mt-20 flex flex-col items-center text-center'>
+        <div className='w-full mt-20 flex flex-col items-center justify-center text-center'>
             <h2 className='  uppercase text-[#EB8529] text-sm font-semibold lg:text-xl'>Enduring Legacies | Edition 1</h2>
             <h2 className=" text-3xl  lg:text-[4.5vw] leading-none">
                 Timeless frames
@@ -14,7 +14,7 @@ const TimelessFramesHomeSection = () => {
                 <img className='cover' src="/images/exhibition/kamat.jpg" alt="" />
             </div>
 
-            <div className=" w-[50%]">
+            <div className=" w-[50%] flex flex-col items-center">
                 <p className="mb-6   text-sm lg:text-lg  opacity-80 ">
                     In September 2025, SDAF presented its inaugural exhibition: a tribute to the pioneering cinema photographer Damodar Kamat.
                 </p>

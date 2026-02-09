@@ -31,7 +31,7 @@ const TimelessFramesPage = () => {
 
             <FocusSection />
 
-            <Footer/>
+            {/* <Footer/> */}
         </>
     )
 }

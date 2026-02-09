@@ -1,15 +1,10 @@
 "use client";
 import React from 'react'
+import { navLinks } from '../helpers/Links';
 
 const Footer = () => {
 
   const currentYear = new Date().getFullYear();
-
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/timeless-frames", label: "Timeless Frames" },
-    { href: "/canvas-and-creation", label: "Canvas & Creation" },
-  ]
 
   return (
     <div>

@@ -3,13 +3,8 @@ import { RiCheckLine } from '@remixicon/react';
 import React, { useState } from 'react'
 import MainBtn from '../buttons/MainBtn';
 import { toast, ToastContainer } from 'react-toastify';
+import { navLinks } from '../helpers/Links';
 
-
-const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/timeless-frames", label: "Timeless Frames" },
-    { href: "/canvas-and-creation", label: "Canvas & Creation" },
-]
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -198,9 +193,9 @@ const ContactForm = () => {
                                 </label>
 
                                 {/* Submit */}
-                                <div>
+                                <>
                                     <MainBtn txt={loading ? "Submitting..." : "Submit"} disabled={loading} />
-                                </div>
+                                </>
                             </form>
                         </div>
                     </div>

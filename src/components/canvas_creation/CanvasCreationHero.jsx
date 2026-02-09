@@ -11,9 +11,9 @@ const CanvasCreationHero = () => {
                         <h2 className='flex'> <span className='pointer-events-none opacity-0'>.......</span> Creation</h2>
                     </div>
                     <div className=" h-[30%] flex   items-end  gap-20">
-                        <p>February 9–11</p>
-                        <p> 2026 Della Resorts</p>
-                        <p>  Lonavala 16 Artists</p>
+                        <p>• February 9–11</p>
+                        <p>•  2026 Della Resorts</p>
+                        <p> •  Lonavala 16 Artists</p>
                     </div>
                 </div>
                 <div className=" h-full flex justify-end items-center">

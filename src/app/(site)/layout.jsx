@@ -9,6 +9,7 @@ import { useEffect } from "react";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import ContactForm from "@/components/Home/ContactForm";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,13 +31,14 @@ export default function SiteLayout({ children }) {
 
   return (
     // <ViewTransitions routeKey={pathname}>
-      <LenisScroll>
-        <div className="page-root">
-          <Header />
-          <main>{children}</main>
-          {/* <Footer /> */}
-        </div>
-      </LenisScroll>
-  //  </ViewTransitions>
+    <LenisScroll>
+      <div className="page-root">
+        <Header />
+        <main>{children}</main>
+        {/* <Footer /> */}
+        <ContactForm />
+      </div>
+    </LenisScroll>
+    //  </ViewTransitions>
   );
 }

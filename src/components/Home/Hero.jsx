@@ -26,8 +26,8 @@ const Hero = () => {
     return (
         <>
             <div className=" homePage_hero_sec   pt-[15vw] ">
-                <div className=" text-[10vw] capitalize leading-[10vw] font-thin">
-                <div className="w-full pl-2">
+                <div className=" text-[10vw] px-[4vw] capitalize leading-[10vw] font-thin">
+                <div className="w-full ">
                     <h2>Art belongs</h2>
                 </div>
                 <div className="w-full text-end">

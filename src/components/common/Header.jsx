@@ -1,17 +1,12 @@
 "use client";
 import React from 'react'
 import MainBtn from '../buttons/MainBtn'
-import { RiCloseLine, RiMenuLine } from '@remixicon/react'
+import { RiCloseLine, RiCornerDownRightLine, RiMenuLine } from '@remixicon/react'
 import gsap from 'gsap'
 import CustomEase from 'gsap/dist/CustomEase'
+import { navLinks } from '../helpers/Links';
 gsap.registerPlugin(CustomEase);
 
-
-const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/timeless-frames", label: "Timeless Frames" },
-    { href: "/canvas-and-creation", label: "Canvas & Creation" },
-]
 
 const Header = () => {
 
@@ -87,13 +82,22 @@ const Header = () => {
       <div className=" nav w-full h-16  absolute    lg:fixed top-0 left-0 z-[999] px-[4vw] flex items-center justify-between">
         <div className=" hidden lg:flex whitespace-nowrap  uppercase text-sm items-center h-full gap-5">
           {navLinks.map((link, i) => (
-            <p
+            <a
               key={i}
-              className="block group overflow-hidden relative cursor-pointer hover:opacity-60 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]"
+              href={link.href}
+              className="block group  w-fit  relative cursor-pointer  transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]"
             >
-              <a href={link.href}>{link.label}</a>
-              <span className="w-full h-[1px]  absolute bg-black bottom-0.5 left-[-100%] group-hover:left-0 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] rounded-full"></span>
-            </p>
+              <span className=' group-hover:opacity-60 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)]'>{link.label}</span>
+              <span className="w-0 h-[1px]  absolute bg-black bottom-0.5 group-hover:w-full left-0 transition-all duration-[0.735s] ease-[cubic-bezier(0.625,0.05,0,1)] rounded-full"></span>
+              {link?.desc &&(
+                <span className='absolute z-[999]  flex items-center overflow-hidden pointer-events-none max-w-0 px-0 gap-x-1 -bottom-[140%] left-1/2  h-7 group-hover:px-2 group-hover:max-w-52 bg-[#EB8529]  transition-all duration-500 shrink-0' > 
+                <RiCornerDownRightLine className='shrink-0' size={14}/>
+                <span className='translate-y-[2px] shrink-0'>
+                   { link.desc}
+                  </span>
+                </span>
+              )}
+            </a>
           ))}
         </div>
         <div className="w-[50%]   h-full flex justify-center ">

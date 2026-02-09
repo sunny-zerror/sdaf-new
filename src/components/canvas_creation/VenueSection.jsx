@@ -18,7 +18,7 @@ const VenueSection = () => {
                     </p>
                 </div>
 
-                <div className="w-full mt-10 flex">
+                <div className="w-full mt-10 flex ">
                     <Marquee pauseOnClick={true} gradient gradientColor='#F1EDDF' >
                         <div className="w-[30vw] ml-10 aspect-4/3">
                             <img src="https://www.dellaresorts.com/new-images/new-data-home-feb.webp" alt="" />
@@ -37,9 +37,7 @@ const VenueSection = () => {
                 </div>
 
             </div>
-
-            <Footer/>
-
+ 
         </>
     )
 }
